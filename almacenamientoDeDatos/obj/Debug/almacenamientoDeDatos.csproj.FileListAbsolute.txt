@@ -1,0 +1,14 @@
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\bin\Debug\almacenamientoDeDatos.exe.config
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\bin\Debug\almacenamientoDeDatos.exe
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\bin\Debug\almacenamientoDeDatos.pdb
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.csproj.AssemblyReference.cache
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.Form1.resources
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.Properties.Resources.resources
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.csproj.GenerateResource.cache
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.csproj.CoreCompileInputs.cache
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.exe
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.pdb
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.frmXml.resources
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.frmCsv.resources
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.frmRtf.resources
+C:\Users\57304\Desktop\almacenamiento de datos\almacenamientoDeDatos\obj\Debug\almacenamientoDeDatos.frmTxt.resources

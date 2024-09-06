@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "almacenamientoDeDatos", "almacenamientoDeDatos.csproj", "{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1614FD9D-9A0F-4FF6-BA6D-555AED9D6148}
+	EndGlobalSection
+EndGlobal
