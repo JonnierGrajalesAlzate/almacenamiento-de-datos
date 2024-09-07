@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FT009 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RegistroFT009>
+		<id>1</id>
+		<nombre>Jonnier</nombre>
+		<edad>18</edad>
+	</RegistroFT009>
+	<RegistroFT009>
+		<id>2</id>
+		<nombre>Erika</nombre>
+		<edad>32</edad>
+	</RegistroFT009>
+	<RegistroFT009>
+		<id>3</id>
+		<nombre>Daniel</nombre>
+		<edad>35</edad>
+	</RegistroFT009>
+</FT009>
