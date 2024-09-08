@@ -18,13 +18,13 @@ namespace almacenamientoDeDatos
 
         private void btnCrear_Click(object sender, EventArgs e)
         { 
-            List<person> p1 = new List<person>();
+            List<person> personas = new List<person>();
             XmlSerializer serial = new XmlSerializer(typeof(List<person>));
  
             if (File.Exists(xmlArchivo)) {
                 using (FileStream fs = new FileStream(xmlArchivo, FileMode.Open, FileAccess.Read))
                 {
-                    p1 = serial.Deserialize(fs) as List<person>;
+                    personas = serial.Deserialize(fs) as List<person>;
                 }
             }
  
@@ -32,19 +32,19 @@ namespace almacenamientoDeDatos
             string lcNombre = txtNombre.Text;
             int lnEdad = int.Parse(txtEdad.Text);
  
-            var lcPersonaExistente = p1.FirstOrDefault(p => p.id == lnId);
+            var lcpersonasExistente = personas.FirstOrDefault(p => p.id == lnId);
 
-            if (lcPersonaExistente != null)
+            if (lcpersonasExistente != null)
             { 
                 MessageBox.Show("Ese id ya se ha utilizado.");
                 return;
             }
              
-            p1.Add(new person() { id = lnId, nombre = lcNombre, edad = lnEdad });
+            personas.Add(new person() { id = lnId, nombre = lcNombre, edad = lnEdad });
  
             using (FileStream fs = new FileStream(xmlArchivo, FileMode.Create, FileAccess.Write))
             {
-                serial.Serialize(fs, p1);
+                serial.Serialize(fs, personas);
                 MessageBox.Show("Registro agregado.");
             }
 
