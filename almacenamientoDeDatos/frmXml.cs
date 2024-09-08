@@ -9,7 +9,7 @@ namespace almacenamientoDeDatos
 {
     public partial class frmXml : Form
     {
-        string xmlArchivo = Environment.CurrentDirectory + "\\datosxml.xml"; 
+        string gArchivoXml = Environment.CurrentDirectory + "\\datosxml.xml"; 
 
         public frmXml()
         {
@@ -18,13 +18,13 @@ namespace almacenamientoDeDatos
 
         private void btnCrear_Click(object sender, EventArgs e)
         { 
-            List<person> personas = new List<person>();
+            List<person> oPersonas = new List<person>();
             XmlSerializer serial = new XmlSerializer(typeof(List<person>));
  
-            if (File.Exists(xmlArchivo)) {
-                using (FileStream fs = new FileStream(xmlArchivo, FileMode.Open, FileAccess.Read))
+            if (File.Exists(gArchivoXml)) {
+                using (FileStream fs = new FileStream(gArchivoXml, FileMode.Open, FileAccess.Read))
                 {
-                    personas = serial.Deserialize(fs) as List<person>;
+                    oPersonas = serial.Deserialize(fs) as List<person>;
                 }
             }
  
@@ -32,19 +32,19 @@ namespace almacenamientoDeDatos
             string lcNombre = txtNombre.Text;
             int lnEdad = int.Parse(txtEdad.Text);
  
-            var lcpersonasExistente = personas.FirstOrDefault(p => p.id == lnId);
+            var lcPersonasExistente = oPersonas.FirstOrDefault(p => p.id == lnId);
 
-            if (lcpersonasExistente != null)
+            if (lcPersonasExistente != null)
             { 
                 MessageBox.Show("Ese id ya se ha utilizado.");
                 return;
             }
              
-            personas.Add(new person() { id = lnId, nombre = lcNombre, edad = lnEdad });
+            oPersonas.Add(new person() { id = lnId, nombre = lcNombre, edad = lnEdad });
  
-            using (FileStream fs = new FileStream(xmlArchivo, FileMode.Create, FileAccess.Write))
+            using (FileStream fs = new FileStream(gArchivoXml, FileMode.Create, FileAccess.Write))
             {
-                serial.Serialize(fs, personas);
+                serial.Serialize(fs, oPersonas);
                 MessageBox.Show("Registro agregado.");
             }
 
@@ -52,16 +52,16 @@ namespace almacenamientoDeDatos
 
         private void btnLeer_Click(object sender, EventArgs e)
         {
-            List<person> p1 = new List<person>();
+            List<person> oPersonas = new List<person>();
             XmlSerializer serial = new XmlSerializer(typeof(List<person>));
  
-            if (File.Exists(xmlArchivo))
+            if (File.Exists(gArchivoXml))
             {
-                using (FileStream fs = new FileStream(xmlArchivo, FileMode.Open, FileAccess.Read))
+                using (FileStream fs = new FileStream(gArchivoXml, FileMode.Open, FileAccess.Read))
                 {
-                    p1 = serial.Deserialize(fs) as List<person>;
+                    oPersonas = serial.Deserialize(fs) as List<person>;
                 }
-                govRegistros.DataSource = p1;
+                govRegistros.DataSource = oPersonas;
             }
             else
             {
@@ -71,26 +71,26 @@ namespace almacenamientoDeDatos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            List<person> p1 = new List<person>();
+            List<person> oPersonas = new List<person>();
             XmlSerializer serial = new XmlSerializer(typeof(List<person>));
  
-            if (File.Exists(xmlArchivo))
+            if (File.Exists(gArchivoXml))
             { 
-                using (FileStream fs = new FileStream(xmlArchivo, FileMode.Open, FileAccess.Read))
+                using (FileStream fs = new FileStream(gArchivoXml, FileMode.Open, FileAccess.Read))
                 {
-                    p1 = serial.Deserialize(fs) as List<person>;
+                    oPersonas = serial.Deserialize(fs) as List<person>;
                 }
  
                 int lnId = int.Parse(txtId.Text);
 
-                var lcPersonaEliminar = p1.FirstOrDefault(p => p.id == lnId);
+                var lcPersonaEliminar = oPersonas.FirstOrDefault(p => p.id == lnId);
 
                 if (lcPersonaEliminar != null)
                 {
-                    p1.Remove(lcPersonaEliminar);
-                    using (FileStream fs = new FileStream(xmlArchivo, FileMode.Create, FileAccess.Write))
+                    oPersonas.Remove(lcPersonaEliminar);
+                    using (FileStream fs = new FileStream(gArchivoXml, FileMode.Create, FileAccess.Write))
                     {
-                        serial.Serialize(fs, p1);
+                        serial.Serialize(fs, oPersonas);
                     }
 
                     MessageBox.Show("Registro eliminado.");
@@ -109,27 +109,27 @@ namespace almacenamientoDeDatos
 
         private void btnActualizar_Click(object sender, EventArgs e)
         { 
-                List<person> p1 = new List<person>();
+                List<person> oPersonas = new List<person>();
                 XmlSerializer serial = new XmlSerializer(typeof(List<person>));
 
-                if (File.Exists(xmlArchivo))
+                if (File.Exists(gArchivoXml))
                 {
-                    using (FileStream fs = new FileStream(xmlArchivo, FileMode.Open, FileAccess.Read))
+                    using (FileStream fs = new FileStream(gArchivoXml, FileMode.Open, FileAccess.Read))
                     {
-                        p1 = serial.Deserialize(fs) as List<person>;
+                        oPersonas = serial.Deserialize(fs) as List<person>;
                     }
 
                     int lnId = int.Parse(txtId.Text);
-                    var lcPersonaActualizar = p1.FirstOrDefault(p => p.id == lnId);
+                    var lcPersonaActualizar = oPersonas.FirstOrDefault(p => p.id == lnId);
 
                     if (lcPersonaActualizar != null)
                     {
                         lcPersonaActualizar.nombre = txtNombre.Text;
                         lcPersonaActualizar.edad = int.Parse(txtEdad.Text);
 
-                        using (FileStream fs = new FileStream(xmlArchivo, FileMode.Create, FileAccess.Write))
+                        using (FileStream fs = new FileStream(gArchivoXml, FileMode.Create, FileAccess.Write))
                         {
-                            serial.Serialize(fs, p1);
+                            serial.Serialize(fs, oPersonas);
                         }
 
                         MessageBox.Show("Registro actualizado.");

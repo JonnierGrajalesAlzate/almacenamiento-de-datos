@@ -52,10 +52,12 @@
             this.btnActualizar.TabIndex = 20;
             this.btnActualizar.Text = "actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // govRegistros
             // 
             this.govRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.govRegistros.GridColor = System.Drawing.Color.White;
             this.govRegistros.Location = new System.Drawing.Point(87, 193);
             this.govRegistros.Name = "govRegistros";
             this.govRegistros.Size = new System.Drawing.Size(384, 150);
@@ -69,6 +71,7 @@
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnLeer
             // 
@@ -77,7 +80,8 @@
             this.btnLeer.Size = new System.Drawing.Size(71, 33);
             this.btnLeer.TabIndex = 17;
             this.btnLeer.Text = "Leer";
-            this.btnLeer.UseVisualStyleBackColor = true; 
+            this.btnLeer.UseVisualStyleBackColor = true;
+            this.btnLeer.Click += new System.EventHandler(this.btnLeer_Click);
             // 
             // btnCrear
             // 
@@ -87,6 +91,7 @@
             this.btnCrear.TabIndex = 16;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // govInformacion
             // 
@@ -155,6 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(567, 450);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.govRegistros);

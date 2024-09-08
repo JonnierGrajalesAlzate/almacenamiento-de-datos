@@ -16,7 +16,7 @@ namespace almacenamientoDeDatos
         } 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            List<person> personas = new List<person>(); 
+            List<person> oPersonas = new List<person>(); 
             if (File.Exists(gArchivoTxt))
             {
                 using (StreamReader sr = new StreamReader(gArchivoTxt))
@@ -25,7 +25,7 @@ namespace almacenamientoDeDatos
                     while ((lcLinea = sr.ReadLine()) != null)
                     {
                         string[] laCampos = lcLinea.Split(',');
-                        personas.Add(new person
+                        oPersonas.Add(new person
                         {
                             id = int.Parse(laCampos[0]),
                             nombre = laCampos[1],
@@ -35,19 +35,19 @@ namespace almacenamientoDeDatos
                 }
             } 
             int lnId = int.Parse(txtId.Text);
-            if (personas.Any(p => p.id == lnId))
+            if (oPersonas.Any(p => p.id == lnId))
             {
                 MessageBox.Show("Ya hay un registro con ese ID");
                 return;
             } 
             string lcNombre = txtNombre.Text;
             int lnEdad = int.Parse(txtEdad.Text);
-            personas.Add(new person() { id = lnId, nombre = lcNombre, edad = lnEdad }); 
+            oPersonas.Add(new person() { id = lnId, nombre = lcNombre, edad = lnEdad }); 
             using (StreamWriter sw = new StreamWriter(gArchivoTxt, false))
             {
-                foreach (var p in personas)
+                foreach (var tcPersona in oPersonas)
                 {
-                    sw.WriteLine($"{p.id},{p.nombre},{p.edad}");
+                    sw.WriteLine($"{tcPersona.id},{tcPersona.nombre},{tcPersona.edad}");
                 }
             }
 
@@ -56,7 +56,7 @@ namespace almacenamientoDeDatos
          
         private void btnLeer_Click(object sender, EventArgs e)
         {
-            List<person> personas = new List<person>(); 
+            List<person> oPersonas = new List<person>(); 
             if (File.Exists(gArchivoTxt))
             {
                 using (StreamReader sr = new StreamReader(gArchivoTxt))
@@ -65,14 +65,14 @@ namespace almacenamientoDeDatos
                     while ((lcLinea = sr.ReadLine()) != null)
                     {
                         string[] laCampos = lcLinea.Split(',');
-                        personas.Add(new person
+                        oPersonas.Add(new person
                         {
                             id = int.Parse(laCampos[0]),
                             nombre = laCampos[1],
                             edad = int.Parse(laCampos[2])
                         });
                     }
-                } govRegistros.DataSource = personas;
+                } govRegistros.DataSource = oPersonas;
             }
             else
             {
@@ -81,7 +81,7 @@ namespace almacenamientoDeDatos
         } 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            List<person> personas = new List<person>(); 
+            List<person> oPersonas = new List<person>(); 
             if (File.Exists(gArchivoTxt))
             {
                 using (StreamReader sr = new StreamReader(gArchivoTxt))
@@ -90,7 +90,7 @@ namespace almacenamientoDeDatos
                     while ((lcLinea = sr.ReadLine()) != null)
                     {
                         string[] laCampos = lcLinea.Split(',');
-                        personas.Add(new person
+                        oPersonas.Add(new person
                         {
                             id = int.Parse(laCampos[0]),
                             nombre = laCampos[1],
@@ -99,16 +99,16 @@ namespace almacenamientoDeDatos
                     }
                 } 
                 int lnId = int.Parse(txtId.Text);
-                var lcPersonaEliminar = personas.FirstOrDefault(p => p.id == lnId);
+                var lcPersonaEliminar = oPersonas.FirstOrDefault(p => p.id == lnId);
 
                 if (lcPersonaEliminar != null)
                 {
-                    personas.Remove(lcPersonaEliminar); 
+                    oPersonas.Remove(lcPersonaEliminar); 
                     using (StreamWriter sw = new StreamWriter(gArchivoTxt, false))
                     {
-                        foreach (var p in personas)
+                        foreach (var tcPersona in oPersonas)
                         {
-                            sw.WriteLine($"{p.id},{p.nombre},{p.edad}");
+                            sw.WriteLine($"{tcPersona.id},{tcPersona.nombre},{tcPersona.edad}");
                         }
                     }
 
@@ -126,7 +126,7 @@ namespace almacenamientoDeDatos
         } 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            List<person> personas = new List<person>(); 
+            List<person> oPersonas = new List<person>(); 
             if (File.Exists(gArchivoTxt))
             {
                 using (StreamReader sr = new StreamReader(gArchivoTxt))
@@ -135,7 +135,7 @@ namespace almacenamientoDeDatos
                     while ((lcLinea = sr.ReadLine()) != null)
                     {
                         string[] laCampos = lcLinea.Split(',');
-                        personas.Add(new person
+                        oPersonas.Add(new person
                         {
                             id = int.Parse(laCampos[0]),
                             nombre = laCampos[1],
@@ -144,7 +144,7 @@ namespace almacenamientoDeDatos
                     }
                 } 
                 int lnId = int.Parse(txtId.Text);
-                var lcPersonaActualizar = personas.FirstOrDefault(p => p.id == lnId);
+                var lcPersonaActualizar = oPersonas.FirstOrDefault(p => p.id == lnId);
 
                 if (lcPersonaActualizar != null)
                 { 
@@ -152,9 +152,9 @@ namespace almacenamientoDeDatos
                     lcPersonaActualizar.edad = int.Parse(txtEdad.Text); 
                     using (StreamWriter sw = new StreamWriter(gArchivoTxt, false))
                     {
-                        foreach (var p in personas)
+                        foreach (var tcPersona in oPersonas)
                         {
-                            sw.WriteLine($"{p.id},{p.nombre},{p.edad}");
+                            sw.WriteLine($"{tcPersona.id},{tcPersona.nombre},{tcPersona.edad}");
                         }
                     }
 

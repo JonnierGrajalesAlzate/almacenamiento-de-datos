@@ -9,6 +9,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|c:\\users\\57304\\desktop\\almacenamiento de datos\\almacenamientodedatos\\frmtxt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|solutionrelative:frmtxt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|c:\\users\\57304\\desktop\\almacenamiento de datos\\almacenamientodedatos\\frmxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|solutionrelative:frmxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|c:\\users\\57304\\desktop\\almacenamiento de datos\\almacenamientodedatos\\frmxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|solutionrelative:frmxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,9 +36,9 @@
               "RelativeDocumentMoniker": "frmTxt.cs",
               "ToolTip": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmTxt.cs",
               "RelativeToolTip": "frmTxt.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAIAzwBIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T01:21:19.851Z",
+              "WhenOpened": "2024-09-08T15:41:30.579Z",
               "EditorCaption": ""
             },
             {
@@ -42,7 +50,32 @@
               "ToolTip": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmTxt.cs [Dise\u00F1o]",
               "RelativeToolTip": "frmTxt.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T01:17:47.389Z",
+              "WhenOpened": "2024-09-08T15:41:28.544Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmXml.cs",
+              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmXml.cs",
+              "RelativeDocumentMoniker": "frmXml.cs",
+              "ToolTip": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmXml.cs",
+              "RelativeToolTip": "frmXml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAABwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T15:38:33.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmXml.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmXml.cs",
+              "RelativeDocumentMoniker": "frmXml.cs",
+              "ToolTip": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmXml.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmXml.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T15:38:29.262Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
