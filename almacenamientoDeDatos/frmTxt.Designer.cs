@@ -52,6 +52,7 @@
             this.btnActualizar.TabIndex = 20;
             this.btnActualizar.Text = "actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // govRegistros
             // 
@@ -69,6 +70,7 @@
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnLeer
             // 
@@ -78,6 +80,7 @@
             this.btnLeer.TabIndex = 17;
             this.btnLeer.Text = "Leer";
             this.btnLeer.UseVisualStyleBackColor = true;
+            this.btnLeer.Click += new System.EventHandler(this.btnLeer_Click);
             // 
             // btnCrear
             // 
@@ -87,6 +90,7 @@
             this.btnCrear.TabIndex = 16;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // govInformacion
             // 

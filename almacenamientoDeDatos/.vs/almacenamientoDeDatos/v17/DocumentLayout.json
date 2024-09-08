@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|c:\\users\\57304\\desktop\\almacenamiento de datos\\almacenamientodedatos\\frmcsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|solutionrelative:frmcsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|c:\\users\\57304\\desktop\\almacenamiento de datos\\almacenamientodedatos\\frmtxt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|solutionrelative:frmtxt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|c:\\users\\57304\\desktop\\almacenamiento de datos\\almacenamientodedatos\\frmxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|solutionrelative:frmxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|c:\\users\\57304\\desktop\\almacenamiento de datos\\almacenamientodedatos\\frmcsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|solutionrelative:frmcsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|c:\\users\\57304\\desktop\\almacenamiento de datos\\almacenamientodedatos\\frmtxt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6FBF0129-B5A5-43A2-B341-4CDC60601D8A}|almacenamientoDeDatos.csproj|solutionrelative:frmtxt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmCsv.cs",
-              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmCsv.cs",
-              "RelativeDocumentMoniker": "frmCsv.cs",
-              "ToolTip": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmCsv.cs",
-              "RelativeToolTip": "frmCsv.cs",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAAAK8AAAANAAAA",
+              "Title": "frmTxt.cs",
+              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmTxt.cs",
+              "RelativeDocumentMoniker": "frmTxt.cs",
+              "ToolTip": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmTxt.cs",
+              "RelativeToolTip": "frmTxt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T00:50:49.665Z",
+              "WhenOpened": "2024-09-08T01:21:19.851Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmCsv.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmCsv.cs",
-              "RelativeDocumentMoniker": "frmCsv.cs",
-              "ToolTip": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmCsv.cs [Dise\u00F1o]",
-              "RelativeToolTip": "frmCsv.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T00:44:52.379Z",
-              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmXml.cs",
-              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmXml.cs",
-              "RelativeDocumentMoniker": "frmXml.cs",
-              "ToolTip": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmXml.cs",
-              "RelativeToolTip": "frmXml.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAABMAAAAKAAAA",
+              "Title": "frmTxt.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmTxt.cs",
+              "RelativeDocumentMoniker": "frmTxt.cs",
+              "ToolTip": "C:\\Users\\57304\\Desktop\\almacenamiento de datos\\almacenamientoDeDatos\\frmTxt.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmTxt.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:39:09.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-08T01:17:47.389Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
